@@ -128,7 +128,7 @@ class TableCanvas extends JComponent {
     }
 }
 
-public class HashTableGUI extends JFrame {
+public class HashTableGI extends JFrame {
     private int tableSize;
     private ArrayList<String>[] table;
     private int count;
@@ -137,7 +137,7 @@ public class HashTableGUI extends JFrame {
     private JLabel statusLabel;
     private TableCanvas tableCanvas;
 
-    public HashTableGUI(int size) {
+    public HashTableGI(int size) {
         this.tableSize = size;
         this.table = new ArrayList[this.tableSize];
         for (int i = 0; i < this.tableSize; i++) {
@@ -326,7 +326,7 @@ public class HashTableGUI extends JFrame {
     }
 
     public static void main(String[] args) {
-        HashTableGUI hashTableGUI = new HashTableGUI(10);
+        HashTableGI hashTableGUI = new HashTableGI(10);
 
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
